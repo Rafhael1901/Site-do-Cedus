@@ -8,7 +8,7 @@
     --font-texto: "Red Hat Display", sans-serif;
 }
 
-@media screen and (min-width: 80px) and (max-width: 980px) {
+@media screen and (min-width: 500px) and (max-width: 980px) {
 
     /* Primeira Parte */
     * {
