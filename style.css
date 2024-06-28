@@ -1,0 +1,502 @@
+:root {
+    --cor-titulo: #5C1362;
+    --cor-de-fundo: #FBF4E8;
+    --cor-branca: white;
+    --cor-linha: #2A516E;
+    --cor-subtitulo: #352C84;
+    --font-padrao: 'Rubik', sans-serif;
+    --font-texto: "Red Hat Display", sans-serif;
+}
+
+@media screen and (min-width: 80px) and (max-width: 980px) {
+
+    /* Primeira Parte */
+    * {
+        margin: 0;
+        padding: 0;
+        /* background-color: var(--cor-de-fundo); */
+    }
+
+    .Section {
+        /* CLASS PRINCIPAL */
+        /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .Section h1 {
+        /*RETIREI  A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        color: var(--cor-titulo);
+        font-size: 11vw;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 8vw;
+    }
+
+    .Section p {
+        /*RETIREI A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        font-size: 3.4vw;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: "Red Hat Display", sans-serif;
+    }
+
+    /* .header1 {
+     flex-direction: column;
+    margin-left: 15%; 
+    display: grid;
+    grid-template-columns: 
+    'titulo imagem';
+} */
+
+    .Image {
+        border-radius: 50px;
+        width: 100%;
+        object-fit: cover;
+        margin: 11% 0 8vw 0;
+    }
+
+    /* div .blockOne {
+    grid-area: titulo;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+    div .BlockTwo {
+        /* grid-area: imagem;
+    margin-left: 68%;
+    margin-top:1%;
+    margin-bottom: 10%; */
+        overflow: hidden;
+    }
+
+    /* ---------------------------------------------------------------------- */
+
+    /* Linha 1 */
+    .LineOne {
+        overflow: hidden;
+        /*se algo transborda*/
+        margin: 5vw 0 5vw 50%;
+        background-color: var(--cor-linha);
+        position: relative;
+    }
+
+    /* ---------------------------------------------------------------------- */
+
+    /* Segunda Parte */
+
+    /* .section1 {
+    display: grid;
+    grid-template-columns: 
+    'titulo imagem';
+    margin-top: 7.5%;
+} */
+.MiddleSection {
+    /* CLASS PRINCIPAL */
+    /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+    .BlockTree h2 {
+        color: var(--cor-subtitulo);
+        font-family: var(--font-padrao);
+        font-size: 7vw;
+        margin: 6vw 0 8vw 0;
+    }
+
+
+    .BlockTree p {
+        /* grid-area: texto2;
+    margin-left: 45%; */
+        font-size: 4.5vw;
+        color: var(--cor-subtitulo);
+        font-style: normal;
+        font-family: var(--font-texto);
+        letter-spacing: 1%;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin: 0 10% 0 10%;
+    }
+    .MiddleImage {
+        border-radius: 50px;
+        width: 100%;
+        object-fit: cover;
+        margin: 11% 0 8vw 0;
+    }
+
+    /* div .block_4 {
+    /grid-area: imagem2; 
+} */
+    /* .Image {
+
+    border-radius: 50px;
+    width: 37%;
+    /margin-left: 5%; 
+} */
+
+    .LineTwo {
+        overflow: hidden;
+        /*se algo transborda*/
+        margin: 5vw 50% 5vw 0;
+        background-color: var(--cor-linha);
+        position: relative;
+    }
+
+    /* ------------------------------------------------------------------------------ */
+
+    /* Terceira Parte */
+
+    /* .section2 {
+        display: grid;
+        grid-template-columns:
+            'titulo imagem';
+        margin-top: 3%;
+    } */
+
+    .SectionLast h2 {
+        color: var(--cor-subtitulo);
+        font-family: var(--font-padrao);
+        font-size: 7vw;
+        margin: 5vw 0 8vw 40%;
+    }
+
+    .SectionLast p {
+       font-size: 4vw;   /*RETIRADO O 4.5vw */
+        color: var(--cor-subtitulo);
+        font-style: normal;
+        font-family: var(--font-texto);
+        letter-spacing: 1%;
+        flex-direction: column;
+        margin: 0 5% 0 5%;
+    }
+
+    .BlockFive {
+        
+     
+    } 
+    .BlockSix > .ImageLast {
+        /*Ultima Imagem */
+        height: auto;
+        border-radius: 50px;
+        width: 100%;
+        object-fit: cover;
+        margin: 11% 0 8vw 0;
+    }
+
+    .LogoTipo {
+        height: auto;
+        width: 10%;
+        object-fit: cover;
+        margin: 10vw 0 0 85%;
+        /* position: fixed;  <=== ERRO*/
+    }        
+
+    /* div .BlockSix {
+        grid-area: imagem2;
+        position: absolute;
+    } */
+
+    /* .imagem3 {
+        border-radius: 50px;
+        width: 37%;
+        margin-left: 55%;
+    } */
+
+    /* ----------------------------------------------------------------------------------- */
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .Section .BlockTwo {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .Section .BlockOne {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+    }
+
+}
+
+:root {
+    --cor-titulo: #5C1362;
+    --cor-de-fundo: #FBF4E8;
+    --cor-branca: white;
+    --cor-linha: #2A516E;
+    --cor-subtitulo: #352C84;
+    --font-padrao: 'Rubik', sans-serif;
+    --font-texto: "Red Hat Display", sans-serif;
+}
+
+@media screen and (min-width: 981px) {
+
+    /* Primeira Parte */
+    * {
+        margin: 0;
+        padding: 0;
+        /* background-color: var(--cor-de-fundo); */
+    }
+
+    .Section {
+        /* CLASS PRINCIPAL */
+        /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
+        display: flex;
+        overflow: hidden;
+    }
+
+    .Section>div>h1 {
+        /*RETIREI  A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        color: var(--cor-titulo);
+        font-size: 5vw;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 8vw;
+    }
+
+    .Section>div>p {
+        /*RETIREI A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        font-size: 2vw;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+    }
+
+    .Section {
+        display: grid;
+        grid-template-areas: 'titulo imagem';
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    .Section>.BlockOne {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .Section>.BlockTwo {
+        align-items: top;
+        display: flex;
+    }
+
+    .Image {
+        border-radius: 50px;
+        width: 100%;
+        object-fit: cover;
+        margin: 0 0 2vw 4vw;
+    }
+
+    .BlockOne {
+        grid-area: titulo;
+    }
+
+    .BlockTwo {
+        grid-area: imagem;
+        overflow: hidden;
+    }
+
+    /* ---------------------------------------------------------------------- */
+
+    /* Linha 1 */
+    .LineOne {
+        overflow: hidden;
+        /*se algo transborda*/
+        margin: 5vw 0 5vw 50%;
+        background-color: var(--cor-linha);
+        position: relative;
+    }
+
+    /* ---------------------------------------------------------------------- */
+
+    .MiddleSection {
+        /* CLASS DO MEIO */
+        /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
+        display: flex;
+        overflow: hidden;
+    }
+
+    .MiddleSection>div>h2 {
+        /*RETIREI  A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        color: var(--cor-subtitulo);
+        font-size: 5vw;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 8vw;
+    }
+
+    .MiddleSection>div>.Phrase {
+        /*RETIREI A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        font-size: 2vw;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+        color: var(--cor-subtitulo);
+    }
+
+    .MiddleSection {
+        display: grid;
+        grid-template-areas: 'imagem titulo';
+        gap: 0 0;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    .MiddleSection>.BlockTree {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+
+    .MiddleSection>.BlockFor {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .MiddleSection > .BlockFor >.MiddleImage {
+        border-radius: 50px;
+        width: 80%;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .BlockTree {
+        grid-area: titulo;
+    }
+
+    .BlockFor {
+        grid-area: imagem;
+        overflow: hidden;
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    .LineTwo {
+        overflow: hidden;
+        /*se algo transborda*/
+        margin: 5vw 50% 5vw 0;
+        background-color: var(--cor-linha);
+        position: relative;
+    }
+
+    /* ------------------------------------------------------------------------------ */
+
+    /* Terceira Parte */
+
+    .SectionLast{
+        /* CLASS DO MEIO */
+        /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
+        display: flex;
+        overflow: hidden;
+    }
+
+    .SectionLast > div > h2 {
+        /*RETIREI  A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        color: var(--cor-subtitulo);
+        font-size: 5vw;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 4vw;
+    }
+
+    .SectionLast> div > .PhraseTwo {
+        /*RETIREI A FRASE "ONE" DO NOME DA CLASSE Section: SectionOne */
+        font-size: 2vw;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+        color: var(--cor-subtitulo);
+        margin: 0 5% 0 5%;
+    }
+
+    .SectionLast {
+        display: grid;
+        grid-template-areas: 'titulo imagem';
+        gap: 0 0;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+
+    .SectionLast>.BlockFive {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+
+    .SectionLast>.BlockSix {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .SectionLast > .BlockSix > .ImageLast {
+        border-radius: 50px;
+        width: 80%;
+        margin-top: 7%;
+        object-fit: cover;
+        display: flex;
+    }
+
+    .BlockFive {
+        grid-area: titulo;
+    }
+
+    .BlockSix {
+        grid-area: imagem;
+        overflow: hidden;
+    }
+    .LogoTipo {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        margin: 10vw 0 5% 93%;
+        /* position: fixed;  <=== ERRO*/
+    }
+    /* ----------------------------------------------------------------------------------- */
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .Section .BlockTwo {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .Section .BlockOne {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+    }
+
+}
