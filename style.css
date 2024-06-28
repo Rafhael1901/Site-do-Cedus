@@ -17,7 +17,13 @@
         /* background-color: var(--cor-de-fundo); */
         overflow-x: hidden;
     }
-
+   ::-webkit-scrollbar-thumb{
+        background-color: var(--cor-titulo);
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+  }
     .Section {
         /* CLASS PRINCIPAL */
         /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
