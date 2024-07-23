@@ -14,7 +14,7 @@
     * {
         margin: 0;
         padding: 0;
-        /* background-color: var(--cor-de-fundo); */
+         background-color: var(--cor-de-fundo); 
         overflow-x: hidden;
     }
   
