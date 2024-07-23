@@ -17,7 +17,13 @@
          background-color: var(--cor-de-fundo); 
         overflow-x: hidden;
     }
-  
+   main {
+    background-color: var(--cor-de-fundo); 
+   }
+   header > nav {
+    background-color: var(--cor-de-fundo); 
+   }
+
     .Section {
         /* CLASS PRINCIPAL */
         /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
@@ -256,7 +262,12 @@
         padding: 0;
         background-color: var(--cor-de-fundo); 
     }
-
+ main {
+    background-color: var(--cor-de-fundo); 
+   }
+   header > nav {
+    background-color: var(--cor-de-fundo); 
+   }
     .Section {
         /* CLASS PRINCIPAL */
         /*RETIREI A FRASE "ONE" DO FINAL DO NOME DA CLASSE Section: SectionOne */
